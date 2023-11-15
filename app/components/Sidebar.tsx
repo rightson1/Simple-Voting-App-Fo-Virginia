@@ -161,6 +161,25 @@ export default function Sidebar({
               },
             ],
           },
+          {
+            name: "Results",
+            links: [
+              {
+                name: "Miss Riara",
+                icon: <PeopleIcon />,
+                info: `11`,
+                link: "/voter/miss-riara",
+                active: active === "/voter/miss-riara",
+              },
+              {
+                name: "Mr riara",
+                icon: <CelebrationIcon />,
+                info: `44`,
+                link: "/voter/mr-riara",
+                active: active === "/voter/mr-riara",
+              },
+            ],
+          },
         ];
 
   const DesktopDrawer = ({ children }: { children: React.ReactNode }) => {

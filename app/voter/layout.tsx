@@ -6,7 +6,6 @@ import Sidebar from "../components/Sidebar";
 import Rightbar from "../components/Rightbar";
 import { useTheme } from "@mui/material/styles";
 import { useMediaQuery } from "@mui/material";
-import CustomSpeedDial from "../components/CustomSpeedDial";
 import { useGlobalTheme } from "@/utils/themeContext";
 import Box from "@mui/material/Box";
 import BottomBar from "../components/BottomBar";
@@ -62,7 +61,6 @@ const Layout = ({ children }: childrenProps) => {
         {children}
       </Box>
       <Rightbar />
-      <CustomSpeedDial />
     </Box>
   );
 };

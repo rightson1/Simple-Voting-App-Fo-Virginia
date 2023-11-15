@@ -32,7 +32,7 @@ export const useGetVotes = () => {
   return useQuery({
     queryKey: ["votes"],
     refetchOnMount: true,
-    staleTime: 1000 * 60 * 60 * 24,
+    staleTime: 1000 * 60,
     queryFn: (): Promise<VoteFetched[]> =>
       axios.get("/api/votes").then((res) => res.data),
   });
