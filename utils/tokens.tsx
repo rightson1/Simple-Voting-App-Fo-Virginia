@@ -2,20 +2,20 @@ import { TokenColors } from "@/types";
 
 export const tokens = (): TokenColors => ({
   ...{
-    background: "#090B0E", //background color
-    surface: "#1D242D", //surface color
-    active: "#47586E",
+    background: "#000", //background color
+    surface: "#452E8F", //surface color
+    active: "#A21984",
     white: "#FFFFFF",
     text: "#E2E8F0",
     textSecondary: "#A0AEC0",
-    card: "#151a20",
+    card: "#A21984",
 
     indigo: {
       100: "#ccdcdf",
       200: "#99b9c0",
       300: "#6697a0",
       400: "#337481",
-      500: "#005161",
+      500: "#A21984",
       600: "#00414e",
       700: "#00313a",
       800: "#002027",
@@ -26,7 +26,7 @@ export const tokens = (): TokenColors => ({
       200: "#a5f2c1",
       300: "#79eca2",
       400: "#4ce583",
-      500: "#1fdf64",
+      500: "#452E8F",
       600: "#19b250",
       700: "#13863c",
       800: "#0c5928",

@@ -59,8 +59,8 @@ export default function PageSearch({ open, setOpen }: openProps) {
       }}
     >
       <Box sx={style} className="br w-[90%] sm:w-[500px] absolute">
-        <Box className="flex flex-between items-center shadow-md p-2">
-          <Box className="flex gap-1 items-center">
+        <Box className="flex flex-between items-center shadow-md p-2 w-full">
+          <Box className="flex gap-1 items-center w-full">
             <SearchIcon />
             <InputBase
               placeholder="Search...."

@@ -100,7 +100,7 @@ const UserRight = () => {
                 <Box
                   border={1}
                   borderColor={colors.active}
-                  bgcolor={colors.card}
+                  bgcolor={colors.surface}
                   key={i}
                   className="
               h-[220px]
