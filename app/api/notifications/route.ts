@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import db from "@/utils/db";
 import Notification from "@/utils/models/Notification";
 import { NotificationFetched } from "@/types";
+export const dynamic = "force-dynamic";
 export async function POST(request: NextRequest) {
   await db();
   const body = await request.json();

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import db from "@/utils/db";
 import User from "@/utils/models/User";
+export const dynamic = "force-dynamic";
 export async function GET(request: NextRequest) {
   try {
     await db();
