@@ -63,7 +63,7 @@ const EditCandidate = ({ id }: { id: string }) => {
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    let url = candidate.photo;
+    let url = "";
     const update = async () => {
       const data = {
         userId: values.candidate,
@@ -74,11 +74,14 @@ const EditCandidate = ({ id }: { id: string }) => {
         _id: candidate._id,
       };
       if (selectedImage) {
-        await deleteFile(url);
+        await deleteFile(candidate.photo);
         url = await uploadFile(selectedImage, `candidates/${values.candidate}`);
       }
       data.photo = url;
-      await editCandidate(data);
+      await editCandidate({
+        ...data,
+        photo: url || candidate.photo,
+      });
     };
     customToast({
       userFunction: update,

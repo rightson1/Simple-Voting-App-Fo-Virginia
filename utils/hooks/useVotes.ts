@@ -20,7 +20,7 @@ export const useAddVote = () => {
 export const useVoted = (id: string) => {
   return useQuery({
     queryKey: [`voted`, id],
-    staleTime: 1000 * 60 * 60 * 24,
+    staleTime: 0 * 60 * 60 * 24,
 
     queryFn: (): Promise<number> =>
       axios.get(`/api/votes/voted?id=${id}`).then((res) => res.data),
